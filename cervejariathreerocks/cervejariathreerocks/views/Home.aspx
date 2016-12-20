@@ -82,6 +82,29 @@
                         </div>
                     </div>
 
+                    <!-- Multiple Radios (inline) -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="qualidade">Qualidade Geral da Cerveja:</label>
+                        <div class="col-md-4">
+                            <label class="radio-inline" for="qualidade-0">
+                                <input type="radio" name="qualidade" id="qualidade-0" value="1" checked="checked">
+                                1
+                            </label>
+                            <label class="radio-inline" for="qualidade-1">
+                                <input type="radio" name="qualidade" id="qualidade-1" value="2">
+                                2
+                            </label>
+                            <label class="radio-inline" for="qualidade-2">
+                                <input type="radio" name="qualidade" id="qualidade-2" value="3">
+                                3
+                            </label>
+                            <label class="radio-inline" for="qualidade-3">
+                                <input type="radio" name="qualidade" id="qualidade-3" value="4">
+                                4
+                            </label>
+                        </div>
+                    </div>
+
                     <!-- Button -->
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="enviar"></label>
