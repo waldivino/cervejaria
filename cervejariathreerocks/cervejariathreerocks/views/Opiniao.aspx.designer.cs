@@ -11,7 +11,7 @@ namespace cervejariathreerocks.views
 {
 
 
-    public partial class Home1
+    public partial class Home
     {
     }
 }

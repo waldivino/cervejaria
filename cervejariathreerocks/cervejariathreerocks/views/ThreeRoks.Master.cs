@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace cervejariathreerocks.views
 {
-    public partial class Home1 : System.Web.UI.Page
+    public partial class ThreeRoks : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

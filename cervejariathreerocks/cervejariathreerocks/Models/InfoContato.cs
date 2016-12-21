@@ -10,8 +10,9 @@ namespace cervejariathreerocks.Models
         public int id { get; set; }
         public string nome { get; set; }
         public string email { get; set; }
-        public string estado { get; set; }
-        public string cidade { get; set; }
+        public string estadoCidade { get; set; }
         public string estiloThreeRocks { get; set; }
+        public string qualidade { get; set; }
+        public string mensagem { get; set; }
     }
 }
