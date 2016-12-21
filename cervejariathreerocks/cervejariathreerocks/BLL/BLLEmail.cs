@@ -95,6 +95,7 @@ namespace cervejariathreerocks.BLL
         {
             StringBuilder texto = new StringBuilder();
 
+            texto.Append("Clube - Three Rocks");
             texto.Append("<p>Nome: " + info.nome + "</p><br/>");
             texto.Append("<p>Email: " + info.email+"</p><br/>");
             texto.Append("<p>Estado / Cidade: " + info.estadoCidade + "</p><br/>");

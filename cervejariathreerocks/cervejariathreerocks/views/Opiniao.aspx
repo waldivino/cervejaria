@@ -258,6 +258,10 @@
                                 <input type="radio" name="qualidade" id="qualidade-3" value="4">
                                 4
                             </label>
+                            <label class="radio-inline" for="qualidade-4">
+                                <input type="radio" name="qualidade" id="qualidade-4" value="5">
+                                5
+                            </label>
                         </div>
                     </div>
 

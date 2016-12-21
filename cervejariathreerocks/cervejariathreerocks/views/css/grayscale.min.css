@@ -11,8 +11,9 @@ body, html {
     overflow-x: hidden;
 }
 
-body{
-    background: url(../img/clube.jpg) bottom center no-repeat #000;
+body {
+    /*background: url(../img/clube.jpg) bottom center no-repeat #000;*/
+    background: black;
     background-size: cover;
 }
 
@@ -149,7 +150,8 @@ a {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/clube.jpg) bottom center no-repeat #000;
+    /*background: url(../img/clube.jpg) bottom center no-repeat #000;*/
+     background: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -197,7 +199,8 @@ a {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
-    background: url(../img/clube.jpg) bottom center no-repeat #000;
+    /*background: url(../img/clube.jpg) bottom center no-repeat #000;*/
+    background: black;
     background-size: cover;
 }
 
