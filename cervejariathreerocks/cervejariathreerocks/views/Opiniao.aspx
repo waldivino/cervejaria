@@ -34,6 +34,7 @@
             var estilo = $('#estilo').val();
             var comentario = $('#comentario').val();
 
+
             if (qualidade == null) {
 
                 BootstrapDialog.show({
@@ -50,6 +51,92 @@
                 });
                 return false;
             }
+
+            if (nome.length < 2) {
+
+                BootstrapDialog.show({
+                    title: 'Informação',
+                    message: 'O campo nome não pode ficar vazio.',
+                    buttons: [{
+                        label: 'Entendi!',
+                        cssClass: 'btn-primary',
+                        action: function (dialogItself) {
+                            dialogItself.close();
+                            $('#enviar').button('reset');
+                        }
+                    }]
+                });
+                return false;
+            }
+
+            if (email.length < 2) {
+
+                BootstrapDialog.show({
+                    title: 'Informação',
+                    message: 'O campo email não pode ficar vazio.',
+                    buttons: [{
+                        label: 'Entendi!',
+                        cssClass: 'btn-primary',
+                        action: function (dialogItself) {
+                            dialogItself.close();
+                            $('#enviar').button('reset');
+                        }
+                    }]
+                });
+                return false;
+            }
+
+            if (cidadeEstado.length < 2) {
+
+                BootstrapDialog.show({
+                    title: 'Informação',
+                    message: 'O campo Cidade/Estado não pode ficar vazio.',
+                    buttons: [{
+                        label: 'Entendi!',
+                        cssClass: 'btn-primary',
+                        action: function (dialogItself) {
+                            dialogItself.close();
+                            $('#enviar').button('reset');
+                        }
+                    }]
+                });
+                return false;
+            }
+
+            if (estilo.length < 2) {
+
+                BootstrapDialog.show({
+                    title: 'Informação',
+                    message: 'O campo estilo não pode ficar vazio.',
+                    buttons: [{
+                        label: 'Entendi!',
+                        cssClass: 'btn-primary',
+                        action: function (dialogItself) {
+                            dialogItself.close();
+                            $('#enviar').button('reset');
+                        }
+                    }]
+                });
+                return false;
+            }
+
+            if (comentario.length < 2) {
+
+                BootstrapDialog.show({
+                    title: 'Informação',
+                    message: 'O campo comentario não pode ficar vazio.',
+                    buttons: [{
+                        label: 'Entendi!',
+                        cssClass: 'btn-primary',
+                        action: function (dialogItself) {
+                            dialogItself.close();
+                            $('#enviar').button('reset');
+                        }
+                    }]
+                });
+                return false;
+            }
+
 
             $.ajax({
                 //URL -> url de Envio da informações
@@ -69,10 +156,11 @@
 
                 //Success -> Retorno com Sucesso do servidor
                 success: function (data) {
+
                     var json = $.parseJSON(data.d);
 
                     if (json.Info != "Error") {
-                        //  var d = $.parseJSON(json.Data);
+
                         BootstrapDialog.show({
                             title: 'Informação',
                             message: json.Message,
@@ -85,6 +173,8 @@
                                 }
                             }]
                         });
+
+                        return true;
 
                     }
 
@@ -102,6 +192,8 @@
                                 }
                             }]
                         });
+
+                        return false;
 
                     }
                 },
@@ -131,31 +223,6 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-
-    <!-- About Section -->
-    <%--<section id="nossoClube" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Nosso Clube</h2>
-                <p style="">
-                    A Cervejaria Three Rocks vai aos mais distantes cantos da terra em busca de inspiração para produzir ou reproduzir as melhores cervejas de estilo do mundo. Ao receber uma de nossas garrafas teste, o Clube Cerveja Amiga vai ouvir a sua opinião sobre estes produtos e colocar você em contato direto com o grupo de aperfeiçoamento destas delicadas e complexas criações. O prazer é todo nosso.
-                </p>
-            </div>
-        </div>
-    </section>--%>
-
-    <!-- Download Section -->
-    <%--<section id="EstilosThreeRocks" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Em breve ...</h2>
-
-                </div>
-            </div>
-        </div>
-    </section>--%>
 
     <!-- Contact Section -->
     <section id="page-top" class="container content-section text-center">
@@ -238,7 +305,10 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="enviar"></label>
                         <div class="col-md-4">
-                            <button id="enviar" name="enviar" class="btn btn-primary"
+                            <button 
+                                type="button"
+                                id="enviar" 
+                                class="btn btn-success btn-lg"
                                 data-loading-text="Enviando contato <i class='fa fa-refresh fa-spin'></i>"
                                 onclick="Contato()">
                                 enviar</button>

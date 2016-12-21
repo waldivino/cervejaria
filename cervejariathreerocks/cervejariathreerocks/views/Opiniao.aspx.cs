@@ -56,7 +56,7 @@ namespace cervejariathreerocks.views
             catch (Exception ex)
             {
                 results = new InfoResult();
-                results.Info = "ResultOk";
+                results.Info = "Error";
                 results.Data = "";
                 results.Message = "Erro ao enviar o contato: " + ex.Message;
 
