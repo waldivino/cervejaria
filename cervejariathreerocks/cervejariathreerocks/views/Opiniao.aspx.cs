@@ -35,9 +35,9 @@ namespace cervejariathreerocks.views
                     info.nome = nome;
                     info.email = email;
                     info.estadoCidade = estadoCidade;
-                    info.estadoCidade = estadoCidade;
                     info.qualidade = qualidade;
                     info.mensagem = mensagem;
+                    info.estiloThreeRocks = estiloThreeRocks;
 
                     bll.EnviarEmail(info);
 

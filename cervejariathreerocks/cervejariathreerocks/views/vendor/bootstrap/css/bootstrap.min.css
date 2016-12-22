@@ -11,7 +11,10 @@ html {
 }
 
 body {
+    
 }
+
+
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
     display: block;
@@ -1817,8 +1820,8 @@ pre {
     }
 
 .pre-scrollable {
-    max-height: 340px;
-    overflow-y: scroll;
+    max-height: 840px;
+    overflow-y: hidden;
 }
 
 .container {
@@ -4554,12 +4557,12 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 }
 
 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
-    max-height: 340px;
+    max-height: 1050px;
 }
 
 @media (max-device-width:480px) and (orientation:landscape) {
     .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
-        max-height: 200px;
+        max-height: 600px;
     }
 }
 
@@ -4602,6 +4605,7 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 .navbar-fixed-top {
     top: 0;
     border-width: 0 0 1px;
+    overflow-Y: hidden!important; 
 }
 
 .navbar-fixed-bottom {

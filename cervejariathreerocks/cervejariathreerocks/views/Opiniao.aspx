@@ -13,7 +13,7 @@
     <!-- Style Página -->
     <link href="../Content/bootstrap-dialog.css" rel="stylesheet" />
     <link href="../Content/font-awesome.css" rel="stylesheet" />
-<%--    <link href="../Content/jquery-ui-1.10.4.custom.css" rel="stylesheet" />--%>
+    <%--    <link href="../Content/jquery-ui-1.10.4.custom.css" rel="stylesheet" />--%>
 
 
     <script type="text/javascript">
@@ -170,6 +170,13 @@
                                 action: function (dialogItself) {
                                     dialogItself.close();
                                     $('#enviar').button('reset');
+
+                                    $("input[type=radio][name='qualidade']:checked").val("");
+                                    $('#nome').val("");
+                                    $('#email').val("");
+                                    $('#cidadeEstado').val("");
+                                    $('#estilo').val("");
+                                    $('#comentario').val("");
                                 }
                             }]
                         });
@@ -309,9 +316,9 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="enviar"></label>
                         <div class="col-md-4">
-                            <button 
+                            <button
                                 type="button"
-                                id="enviar" 
+                                id="enviar"
                                 class="btn btn-success btn-lg"
                                 data-loading-text="Enviando contato <i class='fa fa-refresh fa-spin'></i>"
                                 onclick="Contato()">
