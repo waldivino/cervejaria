@@ -51,11 +51,11 @@ namespace cervejariathreerocks.BLL
             StringBuilder texto = new StringBuilder();
 
             texto.Append("Clube - Three Rocks");
-            texto.Append("<p>Nome: " + info.nome + "</p><br/>");
-            texto.Append("<p>Email: " + info.email + "</p><br/>");
-            texto.Append("<p>Estado / Cidade: " + info.estadoCidade + "</p><br/>");
-            texto.Append("<p>Estilo: " + info.estiloThreeRocks + "</p><br/>");
-            texto.Append("<p>Qualidade: " + info.qualidade + "</p><br/>");
+            texto.Append("<p>Nome: " + info.nome + "</p>");
+            texto.Append("<p>Email: " + info.email + "</p>");
+            texto.Append("<p>Estado / Cidade: " + info.estadoCidade + "</p>");
+            texto.Append("<p>Estilo: " + info.estiloThreeRocks + "</p>");
+            texto.Append("<p>Qualidade: " + info.qualidade + "</p>");
             texto.Append("<p>Mensagem: " + info.mensagem + "</p><br/>");
 
             texto.Append("<center><h3>Cervejaria Three Rocks</h3></center>");
