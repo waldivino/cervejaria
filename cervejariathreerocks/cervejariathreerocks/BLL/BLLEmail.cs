@@ -22,8 +22,8 @@ namespace cervejariathreerocks.BLL
                 mailMessage.From = new MailAddress("clube@threerocks.com.br", "Clube - Three Rocks");
                 //destinatarios do e-mail, para incluir mais de um basta separar por ponto e virgula 
                 mailMessage.To.Add("clube@threerocks.com.br");
-                mailMessage.CC.Add("wfredericomp@gmail.com");
-                mailMessage.Bcc.Add("clube@cervejariathreerocks.com.br");
+                mailMessage.CC.Add("clube@cervejariathreerocks.com.br");
+                mailMessage.Bcc.Add("orodrigoaraujo@gmail.com");
                 mailMessage.Subject = "Clube - Three Rocks";
                 mailMessage.IsBodyHtml = true;
                 //conteudo do corpo do e-mail

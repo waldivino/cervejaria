@@ -112,6 +112,7 @@
     <Content Include="views\img\imagem.png" />
     <Content Include="views\Site.Master" />
     <Content Include="views\ThreeRoks.Master" />
+    <None Include="Properties\PublishProfiles\ThreeRocks.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
