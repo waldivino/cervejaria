@@ -28,64 +28,25 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="height: 65px;">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    Menu <i class="fa fa-bars"></i>
-                </button>
+
                 <a class="navbar-brand page-scroll" href="#page-top">
 
-                    <img class="block" id="u218_img" src="img/logo.png" alt="Cervejaria Three Rocks" data-image-width="61" data-image-height="45" />
+                    <img class="block" id="u218_img" src="img/logo.png" alt="Cervejaria Three Rocks" data-image-width="61" data-image-height="45" style="margin-top: -14px;"/>
 
                 </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-<%--                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#nossoClube">Nosso Clube</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#EstilosThreeRocks">Estilos Three Rocks</a>
-                    </li>--%>
-                    <li>
-                        <a class="page-scroll" href="#opniao">Sua Opinião</a>
-                    </li>
-                </ul>
+
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
-
-    <!-- Intro Header -->
-  <%--  <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-
-                        <h1>Estilos Three Rocks</h1>
-
-                        <img src="img/cerveja.png" />
-
-                        <br />
-
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>--%>
 
     <form id="form1" runat="server">
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
@@ -96,7 +57,7 @@
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; - Rio de Janeiro - Brasil 2016</p>
+            <h5 style="font-size: 8px!important;">Copyright &copy; - Rio de Janeiro - Brasil 2016</h5>
         </div>
     </footer>
 

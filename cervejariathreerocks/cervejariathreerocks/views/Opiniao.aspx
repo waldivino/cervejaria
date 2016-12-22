@@ -238,9 +238,9 @@
 
                 <div class="form-horizontal" style="margin-top: -55px;">
 
-
-                    <img src="img/imagem.png" />
                     <img src="img/cerveja.png" />
+                    <img src="img/imagem.png" />
+                    
 
                     <!-- Form Name -->
                     <h2 style="color: #FFF;">Sua Opinião</h2>
@@ -250,23 +250,23 @@
                         <label class="col-md-4 control-label" for="qualidade">Qualidade Geral da Cerveja:</label>
                         <div class="col-md-4">
                             <label class="radio-inline" for="qualidade-0">
-                                <input type="radio" name="qualidade" id="qualidade-0" value="1">
+                                <input type="radio" name="qualidade" id="qualidade-0" value="1" class="input-dominio">
                                 1
                             </label>
                             <label class="radio-inline" for="qualidade-1">
-                                <input type="radio" name="qualidade" id="qualidade-1" value="2">
+                                <input type="radio" name="qualidade" id="qualidade-1" value="2" class="input-dominio">
                                 2
                             </label>
                             <label class="radio-inline" for="qualidade-2">
-                                <input type="radio" name="qualidade" id="qualidade-2" value="3">
+                                <input type="radio" name="qualidade" id="qualidade-2" value="3" class="input-dominio">
                                 3
                             </label>
                             <label class="radio-inline" for="qualidade-3">
-                                <input type="radio" name="qualidade" id="qualidade-3" value="4">
+                                <input type="radio" name="qualidade" id="qualidade-3" value="4" class="input-dominio">
                                 4
                             </label>
                             <label class="radio-inline" for="qualidade-4">
-                                <input type="radio" name="qualidade" id="qualidade-4" value="5">
+                                <input type="radio" name="qualidade" id="qualidade-4" value="5" class="input-dominio">
                                 5
                             </label>
                         </div>
